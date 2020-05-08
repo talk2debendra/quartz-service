@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>com.codingvine</groupId>
+	<artifactId>bootstrap-project</artifactId>
+	<packaging>pom</packaging>
+	<name>bootstrap-project</name>
+
+	<parent>
+		<groupId>com.codingvine.core</groupId>
+		<artifactId>codingvine-parent</artifactId>
+		<version>1.0.0</version>
+		<relativePath>../core-utils/codingvine-parent</relativePath>
+	</parent>
+
+	<modules>
+		<module>bootstrap</module>
+		<module>../core-utils/base</module>
+		<module>../core-utils/sqljpa</module>
+		<module>../core-utils/pojo</module>
+		<module>../core-utils/kafka</module>
+	</modules>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>bootstrap-project</id>
+			<properties>
+				<sonar.skip>false</sonar.skip>
+			</properties>
+		</profile>
+	</profiles>
+
+</project>
+
