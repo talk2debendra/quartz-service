@@ -12,6 +12,7 @@ A microservice which illustrates the use of Quartz in spring boot.
 
 EX : to register a CRON for every 1 minute
 http://localhost:8090/quartz-service/test/schedule/cron
+-Payload
 {
   "cronExpression": "0 0/1 * 1/1 * ? *",
   "groupName": "cornJob4Every1Minutes",
