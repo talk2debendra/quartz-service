@@ -5,9 +5,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.codingvine</groupId>
-	<artifactId>bootstrap-project</artifactId>
+	<artifactId>quartz-service-parent</artifactId>
 	<packaging>pom</packaging>
-	<name>bootstrap-project</name>
+	<name>quartz-service-parent</name>
 
 	<parent>
 		<groupId>com.codingvine.core</groupId>
@@ -17,11 +17,11 @@
 	</parent>
 
 	<modules>
-		<module>bootstrap</module>
+		<module>quartz-service</module>
 		<module>../core-utils/base</module>
 		<module>../core-utils/sqljpa</module>
 		<module>../core-utils/pojo</module>
-		<module>../core-utils/kafka</module>
+		
 	</modules>
 
 	<build>
