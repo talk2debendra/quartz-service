@@ -9,9 +9,21 @@ import org.quartz.JobDataMap;
 import org.springframework.scheduling.quartz.QuartzJobBean;
 
 public interface JobService {
-
+	
+	/**
+	 * Schedule a job to be execute only one time.
+	 * 
+	 * @param jobName Name of the Job
+	 * @param groupKey Job group
+	 * @param jobClass Job to be execute
+	 * @param date Start Date & time
+	 * @param jobDataMap Job data
+	 * @param isRecoverable 
+	 * */
 	boolean scheduleOneTimeJob(String jobName, String groupKey, Class<? extends QuartzJobBean> jobClass, Date date, JobDataMap jobDataMap, boolean isRecoverable);
 
+	
+	//TBD- Javadoc comments to be add	
 	boolean scheduleCronJob(String jobName, String groupName, Class<? extends QuartzJobBean> jobClass, Date date, String cronExpression, ZoneId timezone, JobDataMap jobDataMap, boolean isRecoverable);
 
 	boolean updateOneTimeJob(String jobName, Date date);

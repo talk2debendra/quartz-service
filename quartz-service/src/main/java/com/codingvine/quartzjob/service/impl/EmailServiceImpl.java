@@ -1,4 +1,4 @@
-package com.codingvine.quartzjob.service;
+package com.codingvine.quartzjob.service.impl;
 
 import java.nio.charset.StandardCharsets;
 
@@ -10,6 +10,8 @@ import org.springframework.boot.autoconfigure.mail.MailProperties;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
+
+import com.codingvine.quartzjob.service.EmailService;
 
 import lombok.extern.log4j.Log4j2;
 

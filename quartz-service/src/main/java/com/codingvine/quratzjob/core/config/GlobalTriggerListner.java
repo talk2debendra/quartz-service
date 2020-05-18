@@ -1,4 +1,4 @@
-package com.codingvine.quartzjob.service;
+package com.codingvine.quratzjob.core.config;
 
 import org.quartz.JobExecutionContext;
 import org.quartz.Trigger;
@@ -8,7 +8,7 @@ import org.quartz.TriggerListener;
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2
-public class TriggerListner implements TriggerListener {
+public class GlobalTriggerListner implements TriggerListener {
 
 	@Override
 	public String getName() {

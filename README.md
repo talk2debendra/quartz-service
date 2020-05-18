@@ -4,6 +4,7 @@ A microservice which illustrates the use of Quartz in spring boot.
 - You can register a simple Job, a CRON job to send email
 - You can dynamically pause,stop,start the quartz scheduler
 - Uses JdbcStore
+-http://www.quartz-scheduler.org/documentation/2.4.0-SNAPSHOT/configuration.html
 
 - Run the quartz.sql file
 - Run the application

@@ -48,6 +48,7 @@ public class TestController {
 	
 	
 	@PostMapping("/schedule/single")
+	@ApiOperation("Schedule a job which will execute only once.")
 	public ResponseEntity scheduleOneTimeJob(@RequestBody JobDto dto) {
 		
 		ZonedDateTime dateTime = ZonedDateTime.of(dto.getJobScheduleTime(), dto.getTimeZone());
@@ -64,6 +65,7 @@ public class TestController {
 	
 	
 	@PostMapping("/schedule/cron")
+	@ApiOperation("Schedules a CRON job.")
 	public ResponseEntity scheduleCronJob(@RequestBody JobDto dto) {
 		
 		ZonedDateTime dateTime = ZonedDateTime.of(dto.getJobScheduleTime(), dto.getTimeZone());
@@ -80,24 +82,36 @@ public class TestController {
 	
 	
 	@GetMapping("/job/unschedule")
+	@ApiOperation("De-register the quartz job ")
 	public ResponseEntity unscheduleJob(@RequestParam(required = true) String jobName) {
 		return ResponseEntity.ok(examples.unschedule(jobName));
 	}
 	
 	
 	@GetMapping("/job/pause")
+	@ApiOperation("Pauses the schedule job based on the supplied info")
 	public ResponseEntity pauseJob(@RequestParam(required = true) String jobName, @RequestParam(required = true) String groupName) {
 		return ResponseEntity.ok(examples.pause(jobName,groupName));
 	}
 	
 	
+	
+	@GetMapping("/job/resume")
+	@ApiOperation("Reusme the schedule job based on the supplied info")
+	public ResponseEntity resumeJob(@RequestParam(required = true) String jobName, @RequestParam(required = true) String groupName) {
+		return ResponseEntity.ok(examples.resume(jobName,groupName));
+	}
+	
+	
 	@GetMapping("/job/start")
+	@ApiOperation("Start the job based on the supplied info")
 	public ResponseEntity startJob(@RequestParam(required = true) String jobName, @RequestParam(required = true) String groupName) {
 		return ResponseEntity.ok(examples.startJobNow(jobName, groupName));
 	}
 	
 	
 	@GetMapping("/job/stop")
+	@ApiOperation("Stop the job based on the supplied info")
 	public ResponseEntity stopJob(@RequestParam(required = true) String jobName, @RequestParam(required = true) String groupName) {
 		return ResponseEntity.ok(examples.stopJob(jobName, groupName));
 	}

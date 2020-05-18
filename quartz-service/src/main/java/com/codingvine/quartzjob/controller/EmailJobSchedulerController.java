@@ -27,6 +27,10 @@ import com.codingvine.quratzjob.jobs.EmailJob;
 import com.codingvine.quratzjob.jobs.examples.ScheduleEmailRequest;
 import com.codingvine.quratzjob.jobs.examples.ScheduleEmailResponse;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+@Api
 @RestController
 public class EmailJobSchedulerController {
     private static final Logger logger = LoggerFactory.getLogger(EmailJobSchedulerController.class);
@@ -34,6 +38,7 @@ public class EmailJobSchedulerController {
     @Autowired
     private Scheduler scheduler;
 
+    @ApiOperation("Schedules email based on the supplied data.")
     @PostMapping("/schedule/email")
     public ResponseEntity<ScheduleEmailResponse> scheduleEmail(@Valid @RequestBody ScheduleEmailRequest scheduleEmailRequest) {
         try {
