@@ -1,4 +1,6 @@
-package com.codingvine.quratzjob.core.config;
+package com.codingvine.quartzjob.core.config;
+
+import java.util.Objects;
 
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
@@ -37,7 +39,7 @@ public class GlobalJobsListener implements JobListener {
 		String jobName = context.getJobDetail().getKey().toString();
 		log.info("Job : " + jobName + " is finished...");
 
-		if (!jobException.getMessage().equals("")) {
+		if (Objects.nonNull(jobException) && !jobException.getMessage().equals("")) {
 			log.error("Exception thrown by: " + jobName
 				+ " Exception: " + jobException.getMessage());
 		}

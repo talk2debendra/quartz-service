@@ -1,4 +1,4 @@
-package com.codingvine.quratzjob.jobs;
+package com.codingvine.quartzjob.jobs;
 
 import java.lang.management.ManagementFactory;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package com.codingvine.quratzjob.util;
+package com.codingvine.quartzjob.util;
 
 import java.text.ParseException;
 import java.time.ZoneId;
@@ -12,7 +12,7 @@ import org.springframework.scheduling.quartz.JobDetailFactoryBean;
 import org.springframework.scheduling.quartz.QuartzJobBean;
 import org.springframework.scheduling.quartz.SimpleTriggerFactoryBean;
 
-import com.codingvine.quratzjob.core.config.PersistableCronTriggerFactoryBean;
+import com.codingvine.quartzjob.core.config.PersistableCronTriggerFactoryBean;
 
 import lombok.experimental.UtilityClass;
 import lombok.extern.log4j.Log4j2;

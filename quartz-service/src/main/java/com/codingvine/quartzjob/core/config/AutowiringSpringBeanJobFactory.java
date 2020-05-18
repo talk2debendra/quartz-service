@@ -1,4 +1,4 @@
-package com.codingvine.quratzjob.core.config;
+package com.codingvine.quartzjob.core.config;
 
 import org.quartz.spi.TriggerFiredBundle;
 import org.springframework.beans.factory.config.AutowireCapableBeanFactory;

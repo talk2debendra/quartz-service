@@ -1,4 +1,4 @@
-package com.codingvine.quratzjob.core.config;
+package com.codingvine.quartzjob.core.config;
 
 import java.text.ParseException;
 

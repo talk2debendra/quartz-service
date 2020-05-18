@@ -1,13 +1,13 @@
 /**
  * 
  */
-package com.codingvine.quratzjob.util;
+package com.codingvine.quartzjob.util;
 
 import java.util.Properties;
 
 import org.springframework.core.env.Environment;
 
-import com.codingvine.quratzjob.constants.QuartzConstants;
+import com.codingvine.quartzjob.constants.QuartzConstants;
 
 import lombok.experimental.UtilityClass;
 
@@ -34,9 +34,20 @@ public class QuatzUtil {
 		properties.put(QuartzConstants.SHUTDOWN_HOOK_CLASS, environment.getRequiredProperty(QuartzConstants.SHUTDOWN_HOOK_CLASS));
 		properties.put(QuartzConstants.SHUTDOWN_HOOK_CLEAN_SHUTDOWN, environment.getRequiredProperty(QuartzConstants.SHUTDOWN_HOOK_CLEAN_SHUTDOWN));
 
-		
+
 		properties.put(QuartzConstants.WRAP_JOB_EXECUTION_IN_USER_TRANSACTION, environment.getRequiredProperty(QuartzConstants.WRAP_JOB_EXECUTION_IN_USER_TRANSACTION));
-		
+
+		properties.put(QuartzConstants.WRAP_JOB_EXECUTION_IN_USER_TRANSACTION, environment.getRequiredProperty(QuartzConstants.WRAP_JOB_EXECUTION_IN_USER_TRANSACTION));
+		properties.put(QuartzConstants.WRAP_JOB_EXECUTION_IN_USER_TRANSACTION, environment.getRequiredProperty(QuartzConstants.WRAP_JOB_EXECUTION_IN_USER_TRANSACTION));
+		properties.put(QuartzConstants.WRAP_JOB_EXECUTION_IN_USER_TRANSACTION, environment.getRequiredProperty(QuartzConstants.WRAP_JOB_EXECUTION_IN_USER_TRANSACTION));
+		properties.put(QuartzConstants.WRAP_JOB_EXECUTION_IN_USER_TRANSACTION, environment.getRequiredProperty(QuartzConstants.WRAP_JOB_EXECUTION_IN_USER_TRANSACTION));
+
+		properties.put(QuartzConstants.TRIGGER_HISTORY_CLASS, environment.getRequiredProperty(QuartzConstants.TRIGGER_HISTORY_CLASS));
+		properties.put(QuartzConstants.TRIGGER_HISTORY_FIRED_MESSAGE, environment.getRequiredProperty(QuartzConstants.TRIGGER_HISTORY_FIRED_MESSAGE));
+		properties.put(QuartzConstants.TRIGGER_HISTORY_COMPLETE_MESSAGE, environment.getRequiredProperty(QuartzConstants.TRIGGER_HISTORY_COMPLETE_MESSAGE));
+
+		properties.put(QuartzConstants.TRIGGER_HISTORY_MIS_FIRED_MESSAGE, environment.getRequiredProperty(QuartzConstants.TRIGGER_HISTORY_MIS_FIRED_MESSAGE));
+
 		return properties;
 	}
 

@@ -1,4 +1,4 @@
-package com.codingvine.quratzjob.jobs;
+package com.codingvine.quartzjob.jobs;
 
 import java.nio.charset.StandardCharsets;
 

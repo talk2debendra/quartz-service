@@ -1,4 +1,4 @@
-package com.codingvine.quratzjob.config;
+package com.codingvine.quartzjob.config;
 
 import java.beans.PropertyVetoException;
 import java.util.HashMap;
@@ -29,7 +29,7 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 @EnableJpaRepositories(
 		entityManagerFactoryRef = "entityManager",
 		transactionManagerRef = "transactionManager",
-		basePackages = "com.codingvine.quratzjob.repository")
+		basePackages = "com.codingvine.quartzjob.repository")
 @EnableTransactionManagement
 public class DatabaseConfig {
 
@@ -140,7 +140,7 @@ public class DatabaseConfig {
 		LocalContainerEntityManagerFactoryBean entityManagerFactory = new LocalContainerEntityManagerFactoryBean();
 		entityManagerFactory.setDataSource(dataSource());
 		entityManagerFactory.setJpaVendorAdapter(new CustomJpaVendor());
-		entityManagerFactory.setPackagesToScan("com.codingvine.quratzjob.entity");
+		entityManagerFactory.setPackagesToScan("com.codingvine.quartzjob.entity");
 		entityManagerFactory.setJpaPropertyMap(hibernateJpaProperties());
 		return entityManagerFactory;
 	}

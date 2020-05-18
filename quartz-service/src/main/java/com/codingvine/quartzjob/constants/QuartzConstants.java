@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.codingvine.quratzjob.constants;
+package com.codingvine.quartzjob.constants;
 
 import lombok.experimental.UtilityClass;
 
@@ -22,4 +22,11 @@ public class QuartzConstants {
 	public static final String SHUTDOWN_HOOK_CLEAN_SHUTDOWN = "org.quartz.plugin.shutdownHook.cleanShutdown";
 
 	public static final String WRAP_JOB_EXECUTION_IN_USER_TRANSACTION="org.quartz.scheduler.wrapJobExecutionInUserTransaction";
+
+
+	public static final String TRIGGER_HISTORY_CLASS = "org.quartz.plugin.triggHistory.class";
+
+	public static final String TRIGGER_HISTORY_FIRED_MESSAGE = "org.quartz.plugin.triggHistory.triggerFiredMessage";
+	public static final String TRIGGER_HISTORY_COMPLETE_MESSAGE = "org.quartz.plugin.triggHistory.triggerCompleteMessage";
+	public static final String TRIGGER_HISTORY_MIS_FIRED_MESSAGE = "org.quartz.plugin.triggHistory.triggerMisfiredMessage"; 
 }

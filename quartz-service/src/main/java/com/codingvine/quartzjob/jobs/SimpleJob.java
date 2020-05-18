@@ -1,4 +1,4 @@
-package com.codingvine.quratzjob.jobs;
+package com.codingvine.quartzjob.jobs;
 
 import org.quartz.InterruptableJob;
 import org.quartz.JobDataMap;

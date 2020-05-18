@@ -1,4 +1,4 @@
-package com.codingvine.quratzjob.jobs.examples;
+package com.codingvine.quartzjob.jobs.examples;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 

@@ -1,4 +1,4 @@
-package com.codingvine.quratzjob.jobs.examples;
+package com.codingvine.quartzjob.jobs.examples;
 
 import java.time.ZoneId;
 import java.util.Date;
@@ -10,9 +10,9 @@ import org.quartz.JobDataMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.codingvine.quartzjob.jobs.CronJob;
+import com.codingvine.quartzjob.jobs.SimpleJob;
 import com.codingvine.quartzjob.service.JobService;
-import com.codingvine.quratzjob.jobs.CronJob;
-import com.codingvine.quratzjob.jobs.SimpleJob;
 
 import lombok.extern.log4j.Log4j2;
 

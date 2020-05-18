@@ -1,4 +1,4 @@
-package com.codingvine.quratzjob.core.config;
+package com.codingvine.quartzjob.core.config;
 
 import javax.sql.DataSource;
 
@@ -13,7 +13,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.scheduling.quartz.SchedulerFactoryBean;
 
-import com.codingvine.quratzjob.util.QuatzUtil;
+import com.codingvine.quartzjob.util.QuatzUtil;
 
 @Configuration
 public class QuartzSchedulerConfig {

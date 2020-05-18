@@ -1,4 +1,4 @@
-package com.codingvine.quratzjob.jobs.examples;
+package com.codingvine.quartzjob.jobs.examples;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;

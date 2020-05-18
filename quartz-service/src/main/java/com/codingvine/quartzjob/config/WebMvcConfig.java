@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.codingvine.quratzjob.config;
+package com.codingvine.quartzjob.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

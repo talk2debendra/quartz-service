@@ -28,7 +28,7 @@ import org.springframework.scheduling.quartz.SchedulerFactoryBean;
 import org.springframework.stereotype.Service;
 
 import com.codingvine.quartzjob.service.JobService;
-import com.codingvine.quratzjob.util.JobUtil;
+import com.codingvine.quartzjob.util.JobUtil;
 
 import lombok.extern.log4j.Log4j2;
 
