@@ -22,5 +22,6 @@ http://localhost:8090/quartz-service/test/schedule/cron
   "timeZone": "Asia/Kolkata"
 }
 
-#Depedency modules
+# Depedency modules
+import the following module to your classpath
 - https://github.com/talk2debendra/core-utils.git
