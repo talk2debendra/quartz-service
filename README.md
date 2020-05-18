@@ -21,3 +21,6 @@ http://localhost:8090/quartz-service/test/schedule/cron
   "jobScheduleTime": "2020-05-15 17:40:00",
   "timeZone": "Asia/Kolkata"
 }
+
+#Depedency modules
+- https://github.com/talk2debendra/core-utils.git
