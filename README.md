@@ -25,3 +25,6 @@ http://localhost:8090/quartz-service/test/schedule/cron
 # Depedency modules
 import the following module to your classpath
 - https://github.com/talk2debendra/core-utils.git
+
+# Reference tutorial
+https://flylib.com/books/en/2.65.1/
